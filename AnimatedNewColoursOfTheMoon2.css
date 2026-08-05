@@ -207,7 +207,11 @@ border: none !important;
 border-radius: 10px !important;
 box-shadow: none !important;  }
 
-.panel::after:{ content: 'template made by jester (#187561) & katie (#106445), modifications made by Sonni (#493609)'; color: var(--Color4); }
+.panel:after:{ content: 'template made by jester (#187561) & katie (#106445), modifications made by Sonni (#493609)'; color: var(--Color4);
+  display: block;
+  font-size: 11px;
+  margin-top: 5px;
+  text-align: center;}
 
 /* Progress bars */
 
