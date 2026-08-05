@@ -324,13 +324,14 @@ margin-top: 10px !important; }
 
 #makeComment {
 background: var(--Color3) !important;
-border: 2px solid var(--Color3);
+border: 1px solid var(--Color5);
 border-radius: 10px;
 }
 
 input#postComment {
 background: var(--Color4) !important;
 color: var(--Color2);
+border-radius:10px;
 }
 
 /* CHAT */
