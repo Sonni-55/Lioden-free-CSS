@@ -5,7 +5,7 @@
  --Color2: #1D1E40; /*BG, dark purple*/
  --Color3: #423F8C; /*Medium purple*/
  --Color4: #D0CFDE; /*Accents, really light purple*/
- --Color5: #7371b1; /*Light purple*/
+ --Color5: #7371B1; /*Light purple*/
 }
 
 
@@ -121,20 +121,20 @@ background: var(--Color4) !important;
 .breadcrumb{
   background: repeating-linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
   animation: r 10s linear infinite;
-color: var(--Color5) !important;
+color: var(--Color1) !important;
 border: none !important;
 border-radius: 10px !important;} 
 .breadcrumb .active {
-color: var(--Color5); }
+color: var(--Color1); }
 
 @keyframes r {
   to {background-position: 100%}
 }
 	
 .breadcrumb::after{ content: ' ݁ ˖ ‧₊˚ ⋅.⋆.˚ ☾⭒.  ݁₊˖ ⋅ '; 
-color: var(--Color5);
+color: var(--Color1);
 position:absolute;
-right:10%;
+right:30%;
 z-index:100;}
 	
 /* table body*/
@@ -150,6 +150,10 @@ background: var(--Color3) !important;
 color: var(--Color1) !important;
 border: none !important;
 border-radius: 0px !important; }
+
+#about.table .top{
+	background: linear-gradient(in hsl longer hue 90deg, red 0 100%);
+}
 
 /* table.left will be used by the sections on the left of the edit your details panel once open
 .inner-table .left is used by the table that displays the names of the sections of
@@ -207,7 +211,7 @@ box-shadow: none !important;  }
     border: 1px;
 }
 .progress div {
-color: var(--Color5) !important; }
+color: var(--Color1) !important; }
 
 .progress-bar {
 background: linear-gradient(in hsl longer hue 90deg, red 0 100%); ; 
@@ -274,26 +278,26 @@ If you want the flippy floppy colors, where one is a little darker than the othe
 */
 
 div#commentBox {
-background: #HEX80 !important;
-border: 2px solid var(--Color4) !important;
+background: #7371B180 !important;
+border: 2px solid var(--Color1) !important;
 border-radius: 10px !important;
-color: #HEX !important;}
+color: var(--Color3) !important;}
 	
 .comment {     
-background: #HEX80 !important;
+background: #D0CFDE80 !important;
 border: none !important;
-border-bottom: 2px solid #HEX80; !important;
+border-bottom: 2px solid #F2F2F280; !important;
 font-weight: bold; 
-color: var(--Color1) !important;
+color: var(--Color3) !important;
 text-align: center !important;}
 .text-muted { 
-color: var(--Color1) !important; }
+color: var(--Color3) !important; }
 
 input.bad {
 background: var(--Color4) !important;
-color: var(--Color1) !important;}
+color: var(--Color3) !important;}
 input.bad a {
-color: var(--Color1) !important; }
+color: var(--Color3) !important; }
 
 table#player.table hr {
 display: none !important; }
@@ -308,7 +312,7 @@ border-radius: 10px;
 
 input#postComment {
 background: var(--Color4) !important;
-color: var(--Color1);
+color: var(--Color3);
 }
 
 /* CHAT */
@@ -327,7 +331,7 @@ color: var(--Color1) !important; }
 .s-chat-sidebar #fraChatChannelMenu,
 button.channelSwitcher, button.channelSwitcher.active {
 background: var(--Color4) !important;
-color: var(--Color1) !important;	
+color: var(--Color3) !important;	
 border: none !important;
 border-radius: 0px !important;
 box-shadow: none !important; }
@@ -353,10 +357,10 @@ border: none !important; }
 not touch the even/odd specifications */ 
 
 .s-chat-message:nth-child(even) {
-background: #BF8D50BF !important;
+background: #1D1E40BF !important;
 border: none !important; }
 .s-chat-message:nth-child(odd) {
-background: #D9B26ABF!important;
+background: #423F8CBF!important;
 border: none !important; }
 
 /* This changes the color of pinged messages. Yes, it has to say background-color
@@ -366,7 +370,7 @@ may 8th: stop touchy */
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention {
 background-color: var(--Color5) !important;
 border-left: 6px solid var(--Color3) !important;
-color: var(--Color1) !important; }
+color: var(--Color2) !important; }
 
 /* This is the character counter, that displays X/150 */
 
