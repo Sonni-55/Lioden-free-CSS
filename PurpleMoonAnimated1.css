@@ -153,7 +153,7 @@ border-radius: 0px !important; }
 
 #about .top, 
 #about th { 
-background: repeating-linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
+background: repeating-linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200% !important;
 animation: r 10s linear infinite;
 color: var(--Color1)!important;}
 
