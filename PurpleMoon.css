@@ -1,0 +1,254 @@
+/*Credits*/
+
+:root {
+ --Color1: #593414; /*Text, dark brown*/
+ --Color2: #D9B26A; /*BG, light yellow*/
+ --Color3: #BF8D50; /*Dark yellow*/
+ --Color4: #A3A7BF; /*Accents, Blue*/
+ --Color5: #F2E9ED; /*Light blue*/
+}
+
+
+/* ___'s den Header */
+
+
+h1 {
+ font-size: 35px;
+ text-align: center !important;
+  color: var(--Color1) !important;
+
+h1::after { content: '☆⋅⋆ ── '; color: var(--Color4); }
+h1::before { content: '── ⋆⋅☆'; color: var(--Color4); }
+
+h3 {
+color: var(--Color1) !important;
+font-size: 18px;}
+ 
+/* BACKGROUND*/
+
+@media screen and (min-width: 601px) { 
+body {
+background: url('https://i.postimg.cc/XJZTXFnm/lioden-wardrobe-(1)-(21).png') center center fixed;
+background-size: cover;
+color: var(--Color1); } }
+
+@media screen and (max-width: 600px){
+body {
+background: url('https://i.postimg.cc/XJZTXFnm/lioden-wardrobe-(1)-(21).png') center center fixed;
+background-size: cover;
+color: var(--Color1); } }
+
+
+/* MAIN PANEL - The panel in front of your background image. Usually a solid color on Lioden.*/
+
+.container.main {
+background-color: transparent !important;
+background-image: linear-gradient(180deg, #FFE2A660, #FFE2A600);
+transition: none !important;
+animation: none !important;
+border: 2px;
+box-shadow: none;
+border-radius: 5px; }
+.col-md-9 {
+background: none; } 
+
+
+/* LION AND USER AVATAR OPACITY */
+   
+div#lion_image {
+opacity: 1.0;
+border: 10px solid var(--Color4);
+border-radius: 20%;
+overflow: hidden; }   
+table#player img {
+opacity: 1.0;
+border-radius: 10%; } 
+
+
+/* CUSTOM KING TITLE - AFTER */
+
+#about > tbody > tr:nth-child(1) > td > div::after {
+    content:'★ ˎˊ˗」';
+    font-size:17px;
+}
+
+/* CUSTOM KING TITLE - BEFORE */
+ 
+#about > tbody > tr:nth-child(1) > td > div::before {
+    content:'「˗ ˏˋ★';
+    font-size:17px;
+}
+
+/* TOPBAR, NAVBAR, & BREADCRUMB */
+ 
+.topbar {
+background: var(--Color3) !important;
+color: var(--Color1) !important;
+border: none !important;
+border-radius: 0px !important;  }
+ 
+.navbar {
+background: var(--Color2) !important;
+color: var(--Color1) !important;
+border: none !important;
+border-radius: 0px !important;
+font-size: 40px;
+text-align: center !important;
+}
+
+.navbar li a:hover {
+background: var(--Color2) !important;
+color: var(--Color1) !important;
+}
+
+/* This is mobile collapable navbar color changes.
+toggle is the button that opens the navbar
+*/
+
+.navbar-toggle {
+border: none !important;
+background: var(--Color4) !important;
+}
+
+
+/* Bookmark Bar - aka breadcrumb, this is where your link path is shown */
+
+.breadcrumb {
+background: var(--Color4) !important;
+color: var(--Color5) !important;
+border: none !important;
+border-radius: 10px !important;} 
+.breadcrumb .active {
+color: var(--Color5); }
+
+.breadcrumb::after{ content: '૮꒰ ˵• ﻌ•˵꒱ა  ૮꒰˶⁠❛ ˕ ❛ ˶꒱ა'; 
+color: var(--Color5);
+position:absolute;
+right:20%;
+z-index:100;}
+	
+/* table body*/
+
+.table {
+    background: var(--Color2);
+    border: 1px;
+    color: var(--Color1);
+}
+
+.top, .bottom, th {
+background: var(--Color3) !important;
+color: var(--Color1) !important;
+border: none !important;
+border-radius: 0px !important; }
+
+/* table.left will be used by the sections on the left of the edit your details panel once open
+.inner-table .left is used by the table that displays the names of the sections of
+info about your den, like your territory, your king's stats, etc. 
+.inner-table .right is used by the boxes next to the king's info, that displays the actual info. */
+ 
+.table .left {
+background: var(--Color4);
+border-radius: 0px !important; }
+
+.inner-table .left {
+background: var(--Color4) !important;
+border-radius: 0px !important;
+color: var(--Color5) !important;
+}
+
+.inner-table .right {
+background: var(--Color5) !important;
+border-radius: 0px !important; 
+color: var(--Color4) !important; } 
+
+/* FAPA, KING DYNASTY, ETC. */
+ 
+.feature {
+background: var(--Color3) !important;
+color: var(--Color1) !important;
+border: none !important;
+border-radius: 0px !important;  }
+
+div.left {
+background: var(--Color3) !important;
+color: var(--Color1) !important;
+border: none !important;
+border-radius: 10px !important; }
+
+.xsmall {
+font-size: 14px !important; }
+
+/* Side panel */
+
+.panel {
+background: var(--Color2) !important;
+color: var(--Color1) !important;
+border: none !important;
+border-radius: 10px !important;
+box-shadow: none !important;  }
+
+/* Progress bars */
+
+/* background container */
+.progress {
+    background: var(--Color3);
+    color: var(--Color1);
+    border-radius: 10px;
+    border: 1px;
+}
+.progress div {
+color: var(--Color5) !important; }
+
+.progress-bar {
+background: var(--Color4) !important; 
+border-radius: 10px !important; }
+
+/* Text box and button*/
+
+input, select, button.button,
+a.btn.btn-default.button {
+background: var(--Color2) !important;
+border: none !important;
+border-radius: 0px !important;
+color: var(--Color1) !important;
+text-shadow: none !important; }
+
+textarea {
+background: var(--Color5) !important;
+border: none !important;
+border-radius: 0px !important;
+color: var(--Color1) !important;
+text-shadow: none !important; }
+
+/*Sparring box right side*/
+#sparring td:has(select) {
+  background-color: var(--Color3)!important;
+} 
+
+/* CAVE NAMES - changes the color of of where cave names are displayed */
+ 
+.cave-grid,
+.mound-grid {
+background: var(--Color4) !important;
+color: var(--Color5) !important;
+border: none !important;
+border-radius: 0px !important; }
+	
+/* LINKS */
+ 
+a:link,
+a:visited {
+color: var(--Color1)!important;
+background: none !important; }
+
+a:hover {
+color: var(--Color5) !important; }
+
+.inner-table .right a:link,
+.inner-table .right a:visited {
+ Color: var(--Color4)!important;
+ background: none !important; }
+
+.inner-table .right a:hover {
+color: var(--Color2) !important; }
+
