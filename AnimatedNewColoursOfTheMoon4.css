@@ -136,10 +136,11 @@ color: var(--Color1); }
   to {background-position: 100%}
 }
 	
-.breadcrumb::after{content:' ݁ ˖ ‧₊˚ ⋅.⋆.˚ ☾⭒.  ݁₊˖ ⋅ template made by jester (#187561) & katie (#106445), modifications by Sonni (#493609)'; 
+.navbar::after{content:' ݁ ˖ ‧₊˚ ⋅.⋆.˚ ☾⭒.  ݁₊˖ ⋅ template made by jester (#187561) & katie (#106445), modifications by Sonni (#493609)'; 
 color: var(--Color1);
 position:absolute;
 right:17%;
+font-size:10px;
 z-index:100;}
 	
 /* table body*/
