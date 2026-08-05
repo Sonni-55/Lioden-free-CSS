@@ -153,9 +153,13 @@ border-radius: 0px !important; }
 
 #about .top, 
 #about th { 
-	background: linear-gradient(in hsl longer hue 90deg, red 0 100%)!important;
-	color: var(--Color1)!important;
-}
+background: repeating-linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
+animation: r 10s linear infinite;
+color: var(--Color1)!important;}
+
+@keyframes r {
+  to {background-position: 100%}
+} 
 
 /* table.left will be used by the sections on the left of the edit your details panel once open
 .inner-table .left is used by the table that displays the names of the sections of
@@ -216,8 +220,13 @@ box-shadow: none !important;  }
 color: var(--Color1) !important; }
 
 .progress-bar {
-background: linear-gradient(in hsl longer hue 90deg, red 0 100%); ; 
+background: repeating-linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
+animation: r 10s linear infinite;
 border-radius: 10px !important; }
+
+@keyframes r {
+  to {background-position: 100%}
+}
 
 /* Text box and button*/
 
