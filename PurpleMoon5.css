@@ -274,28 +274,108 @@ If you want the flippy floppy colors, where one is a little darker than the othe
 */
 
 div#commentBox {
-background: #HEX !important;
-border: none !important;
-border-radius: 0px !important;
+background: #HEX80 !important;
+border: 2px solid var(--Color4) !important;
+border-radius: 10px !important;
 color: #HEX !important;}
 	
 .comment {     
-background: #HEX !important;
+background: #HEX80 !important;
 border: none !important;
-border-bottom: none !important;
-border-radius: 0px !important;
-color: #HEX !important;
+border-bottom: 2px solid #HEX80; !important;
+font-weight: bold; 
+color: var(--Color1) !important;
 text-align: center !important;}
 .text-muted { 
-color: #HEX !important; }
+color: var(--Color1) !important; }
 
 input.bad {
-background: #HEX !important;
-color: #HEX !important;}
+background: var(--Color4) !important;
+color: var(--Color1) !important;}
 input.bad a {
-color: #HEX !important; }
+color: var(--Color1) !important; }
 
 table#player.table hr {
 display: none !important; }
 table#player.table div.xlarge { 
 margin-top: 10px !important; }
+
+#makeComment {
+background: var(--Color3) !important;
+border: 2px solid var(--Color3);
+border-radius: 10px;
+}
+
+input#postComment {
+background: var(--Color4) !important;
+color: var(--Color1);
+}
+
+/* CHAT */
+
+button#label_currentChannel {
+border: none !important;
+background: var(--Color4) !important; }
+
+div#chatMessageContainer, #chatMessagelist { 
+border: none !important;
+}
+
+.s-chat-message_timestamp {
+color: var(--Color1) !important; }
+
+.s-chat-sidebar #fraChatChannelMenu,
+button.channelSwitcher, button.channelSwitcher.active {
+background: var(--Color4) !important;
+color: var(--Color1) !important;	
+border: none !important;
+border-radius: 0px !important;
+box-shadow: none !important; }
+
+div.emoteList.active {
+  background: var(--Color3) !important;
+  border: 1px solid var(--Color1) !important;
+  box-shadow: none !important;
+}
+div.emoteList.active::before {
+background: var(--Color2);
+border-top: none !important;
+border: 1px solid var(--Color3) !important; }
+	
+/* PINNED MESSAGES - This will change the background color of where staff pin news */
+
+.s-chat-message__pinned {
+background-color: var(--Color3) !important;
+color: var(--Color1) !important;
+border: none !important; }
+
+/* Odd will show at the TOP of chat, even will show every other message under it. If you want both colors the same, do
+not touch the even/odd specifications */ 
+
+.s-chat-message:nth-child(even) {
+background: #BF8D50BF !important;
+border: none !important; }
+.s-chat-message:nth-child(odd) {
+background: #D9B26ABF!important;
+border: none !important; }
+
+/* This changes the color of pinged messages. Yes, it has to say background-color
+no it doesn't work if you just do background.
+may 8th: stop touchy */
+	
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+background-color: var(--Color5) !important;
+border-left: 6px solid var(--Color3) !important;
+color: var(--Color1) !important; }
+
+/* This is the character counter, that displays X/150 */
+
+div#lblCharacterCounter {
+color: var(--Color5) !important; }
+
+/* I can't remember what this does but I know things get weird if you touch it
+that means do NOT touch it.
+i'm being so fr stop touching this */
+html.nolayout {
+background: none !important; }
+
