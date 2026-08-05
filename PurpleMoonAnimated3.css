@@ -158,7 +158,7 @@ animation: r 10s linear infinite !important;
 color: var(--Color1)!important;}
 
 @keyframes r {
-  to {background-position: 100%}
+  to {background-position: 100%!important}
 } 
 
 /* table.left will be used by the sections on the left of the edit your details panel once open
