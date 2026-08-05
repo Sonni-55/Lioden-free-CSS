@@ -16,7 +16,8 @@ h1 {
  font-size: 35px;
  text-align: center !important;
   color: var(--Color1) !important;
-
+}
+	
 h1::after { content: '༻⋆.°☽'; color: var(--Color4); }
 h1::before { content: '☾°.⋆༺'; color: var(--Color4); }
 
