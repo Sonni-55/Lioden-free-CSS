@@ -72,14 +72,14 @@ Please do not remove credit */
 /* CUSTOM KING TITLE - AFTER */
 
 #about > tbody > tr:nth-child(1) > td > div::after {
-    content:'⋆⭒˚.⋆';
+    content:'★˚.⋆';
     font-size:17px;
 }
 
 /* CUSTOM KING TITLE - BEFORE */
  
 #about > tbody > tr:nth-child(1) > td > div::before {
-    content:'⋆.˚⭒⋆';
+    content:'⋆.˚★';
     font-size:17px;
 }
 
@@ -134,7 +134,7 @@ color: var(--Color1); }
 .breadcrumb::after{ content: ' ݁ ˖ ‧₊˚ ⋅.⋆.˚ ☾⭒.  ݁₊˖ ⋅ '; 
 color: var(--Color1);
 position:absolute;
-right:30%;
+right:20%;
 z-index:100;}
 	
 /* table body*/
@@ -151,8 +151,10 @@ color: var(--Color1) !important;
 border: none !important;
 border-radius: 0px !important; }
 
-#about.table .top{
-	background: linear-gradient(in hsl longer hue 90deg, red 0 100%);
+#about .top, 
+#about th { 
+	background: linear-gradient(in hsl longer hue 90deg, red 0 100%)!important;
+	color: var(--Color1)!important;
 }
 
 /* table.left will be used by the sections on the left of the edit your details panel once open
@@ -288,8 +290,7 @@ background: #D0CFDE80 !important;
 border: none !important;
 border-bottom: 2px solid #F2F2F280; !important;
 font-weight: bold; 
-color: var(--Color3) !important;
-text-align: center !important;}
+color: var(--Color3) !important;}
 .text-muted { 
 color: var(--Color3) !important; }
 
@@ -312,7 +313,7 @@ border-radius: 10px;
 
 input#postComment {
 background: var(--Color4) !important;
-color: var(--Color3);
+color: var(--Color2);
 }
 
 /* CHAT */
