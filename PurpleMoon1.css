@@ -43,7 +43,7 @@ color: var(--Color1); } }
 
 .container.main {
 background-color: transparent !important;
-background-image: linear-gradient(180deg, #FFE2A660, #FFE2A600);
+background-image: linear-gradient(180deg, #1D1E4060, #1D1E4000);
 transition: none !important;
 animation: none !important;
 border: 2px;
@@ -121,10 +121,19 @@ border-radius: 10px !important;}
 .breadcrumb .active {
 color: var(--Color5); }
 
-.breadcrumb::after{ content: '૮꒰ ˵• ﻌ•˵꒱ა  ૮꒰˶⁠❛ ˕ ❛ ˶꒱ა'; 
+/* Code from https://css-tip.com/rainbow-gradient-animation/ */
+.breadcrumb{
+  background: repeating-linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
+  animation: r 10s linear infinite;
+}
+@keyframes r {
+  to {background-position: 100%}
+}
+	
+.breadcrumb::after{ content: '☽'; 
 color: var(--Color5);
 position:absolute;
-right:20%;
+right:10%;
 z-index:100;}
 	
 /* table body*/
@@ -200,7 +209,7 @@ box-shadow: none !important;  }
 color: var(--Color5) !important; }
 
 .progress-bar {
-background: var(--Color4) !important; 
+background: linear-gradient(in hsl longer hue 90deg, red 0 100%); ; 
 border-radius: 10px !important; }
 
 /* Text box and button*/
