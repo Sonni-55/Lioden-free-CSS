@@ -59,24 +59,27 @@ background: none; }
 div#lion_image {
 opacity: 1.0;
 border: 10px solid var(--Color4);
-border-radius: 20%;
+border-radius: 50%;
 overflow: hidden; }   
 table#player img {
 opacity: 1.0;
 border-radius: 10%; } 
 
-
+/* CUSTOM KING TITLES
+Codes made by Pandora #144118  
+Codes may be edited, used in commissions or for personal use
+Please do not remove credit */
 /* CUSTOM KING TITLE - AFTER */
 
 #about > tbody > tr:nth-child(1) > td > div::after {
-    content:'★ ˎˊ˗」';
+    content:'⋆⭒˚.⋆';
     font-size:17px;
 }
 
 /* CUSTOM KING TITLE - BEFORE */
  
 #about > tbody > tr:nth-child(1) > td > div::before {
-    content:'「˗ ˏˋ★';
+    content:'⋆.˚⭒⋆';
     font-size:17px;
 }
 
@@ -114,24 +117,21 @@ background: var(--Color4) !important;
 
 /* Bookmark Bar - aka breadcrumb, this is where your link path is shown */
 
-.breadcrumb {
-background: var(--Color4) !important;
+/* Code from https://css-tip.com/rainbow-gradient-animation/ */
+.breadcrumb{
+  background: repeating-linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
+  animation: r 10s linear infinite;
 color: var(--Color5) !important;
 border: none !important;
 border-radius: 10px !important;} 
 .breadcrumb .active {
 color: var(--Color5); }
 
-/* Code from https://css-tip.com/rainbow-gradient-animation/ */
-.breadcrumb{
-  background: repeating-linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
-  animation: r 10s linear infinite;
-}
 @keyframes r {
   to {background-position: 100%}
 }
 	
-.breadcrumb::after{ content: '☽'; 
+.breadcrumb::after{ content: ' ݁ ˖ ‧₊˚ ⋅.⋆.˚ ☾⭒.  ݁₊˖ ⋅ '; 
 color: var(--Color5);
 position:absolute;
 right:10%;
@@ -157,7 +157,7 @@ info about your den, like your territory, your king's stats, etc.
 .inner-table .right is used by the boxes next to the king's info, that displays the actual info. */
  
 .table .left {
-background: var(--Color4);
+background: var(--Color3);
 border-radius: 0px !important; }
 
 .inner-table .left {
@@ -262,3 +262,40 @@ color: var(--Color5) !important; }
 .inner-table .right a:hover {
 color: var(--Color2) !important; }
 
+/*COMMENT BOX 
+This is a complicated one. please read carefully
+div#CommentBox is the color of the ENTIRE BOX, without comments in it. it is also the container
+.comment is the COMMENTS THEMSELVES
+If you want the flippy floppy colors, where one is a little darker than the other, DO NOT FILL IN ANYTHING FOR
+.comment ONLY FILL IN div#commentBox
+
+.input.bad is the icon to delete comments. you will be the only one to see this
+.input.bad a is the color of the x inside of it
+*/
+
+div#commentBox {
+background: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+color: #HEX !important;}
+	
+.comment {     
+background: #HEX !important;
+border: none !important;
+border-bottom: none !important;
+border-radius: 0px !important;
+color: #HEX !important;
+text-align: center !important;}
+.text-muted { 
+color: #HEX !important; }
+
+input.bad {
+background: #HEX !important;
+color: #HEX !important;}
+input.bad a {
+color: #HEX !important; }
+
+table#player.table hr {
+display: none !important; }
+table#player.table div.xlarge { 
+margin-top: 10px !important; }
